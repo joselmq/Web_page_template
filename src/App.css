@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ################################################# */
+/* ################################################# */
+/* ################################################# */
+
+.section-1, .section-2, .section-3, .section-4{
+	height: 100vh;
+}
+.section-1{
+  background-color: #282c34;
+}
+
+.section-2{
+  background-color: #A5A584ff;
+}
+
+.section-3{
+  background-color: #1E1E1Eff;
+}
+
+.section-4{
+  background-color: #3B3D3Eff;
+}
+
+.footer-bar{
+  background-color: #72AFD5ff;
+}
+
+.top-menu{
+  background-color: #007ACCff;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+.lateral-menu{
+  background-color: #007ACCff;
+  height: 50vh;
+  width: 10vw;  
+  position: fixed;
+  top: 25vh;
+  right: 0;
+  border-bottom-left-radius: 40%;
+  border-top-left-radius: 40%;
+}
+
+.vertical-align-parent{
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  flex: 1 1 auto;
+}
+
+.vertical-align-child{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.menu-btn{
+  height: 25%;
+  width: 100%;
+  padding-top: 25% !important;
+  text-align: center !important;
+  text-align: right !important;
+  align-items: center;
+}
+
+/*
+.colors{
+  --eerie-black: #1E1E1Eff;
+  --artichoke: #A5A584ff;
+  --onyx: #3B3D3Eff;
+  --onyx-2: #3B3D3Eff;
+  --onyx-3: #3B3D3Eff; 
+  --artichoke: #A5A584ff;
+  --iceberg: #72AFD5ff;
+  --onyx: #3B3D3Eff;
+  --iceberg-2: #72AFD5ff;
+  --artichoke-2: #A5A584ff;
+  --eerie-black: #1E1E1Eff;
+  --bright-navy-blue: #007ACCff;
+  --onyx: #3B3D3Eff;
+  --onyx-2: #3B3D3Eff;
+  --onyx-3: #3B3D3Eff;
+}
+*/
