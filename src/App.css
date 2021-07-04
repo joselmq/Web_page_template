@@ -64,6 +64,7 @@
 }
 
 .top-menu{
+  overflow: hidden;
   background-color: #007ACCff;
   height: 5vh;
   position: fixed;
@@ -76,7 +77,9 @@
 .lateral-menu{
   background-color: #007ACCff;
   height: 50vh;
-  width: 10vw;  
+  width: 10vw;
+  max-width: 100px;
+  min-width: 50px;
   position: fixed;
   top: 25vh;
   right: 0;
@@ -109,6 +112,10 @@
   text-align: center !important;
   text-align: right !important;
   align-items: center;
+}
+
+.btn-top-menu{
+  border: 1px solid green;
 }
 
 /*

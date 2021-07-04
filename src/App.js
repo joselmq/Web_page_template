@@ -31,9 +31,21 @@ export default App;
 
 function Top_menu(){
   return(
-    <div className="container-fluid top-menu">
+    <div className="container-fluid top-menu" id="navbar">
       <div className="row flex-items-xs-center slider-1 flex-items-xs-middle" id="top-menu" >
-
+        <div class="col-2" />
+        <div class="col-2">
+          <a data-scroll href="#sec-1" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-1</a>
+        </div>
+        <div class="col-2">
+          <a data-scroll href="#sec-2" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-2</a>
+        </div>
+        <div class="col-2">
+          <a data-scroll href="#sec-3" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-3</a>
+        </div>
+        <div class="col-2">
+          <a data-scroll href="#sec-4" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-4</a>
+        </div>
       </div>
     </div>
   )
