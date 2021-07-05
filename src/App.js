@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import React from "react";
+import {Link } from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -29,16 +30,20 @@ function App() {
 }
 export default App;
 
-function Top_menu(){
+export function Top_menu(){
   return(
     <div className="container-fluid top-menu" id="navbar">
       <div className="row flex-items-xs-center slider-1 flex-items-xs-middle" id="top-menu" >
         <div class="col-2" />
         <div class="col-2">
-          <a data-scroll href="#sec-1" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-1</a>
+          <Link to="/">
+            <a class="btn btn-top-menu" role="button" aria-pressed="true">Sección-1</a>
+          </Link>
         </div>
         <div class="col-2">
-          <a data-scroll href="#sec-2" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-2</a>
+          <Link to="/Second_page">
+            <a href="#sec-2" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-2</a>    
+          </Link>
         </div>
         <div class="col-2">
           <a data-scroll href="#sec-3" class="btn btn-top-menu" role="button" aria-pressed="true">Sección-3</a>
@@ -51,7 +56,7 @@ function Top_menu(){
   )
 }
 
-function Section_1(){
+export function Section_1(){
   return(
     <div className="container-fluid section-1">
       <div className="row flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1" >
@@ -64,7 +69,7 @@ function Section_1(){
   )
 }
 
-function Section_2(){
+export function Section_2(){
   return(
     <div className="container-fluid section-2">
       <div className="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" >
@@ -77,7 +82,7 @@ function Section_2(){
   )
 }
 
-function Section_3(){
+export function Section_3(){
   return(
     <div className="container-fluid section-3">
       <div className="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3" >
@@ -90,7 +95,7 @@ function Section_3(){
   )
 }
 
-function Section_4(){
+export function Section_4(){
   return(
     <div className="container-fluid section-4">
       <div className="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-4" >
@@ -103,7 +108,7 @@ function Section_4(){
   )
 }
 
-function Footer(){
+export function Footer(){
   return(
     <div className="container-fluid footer-bar">
       <div className="row flex-items-xs-center slider-3 flex-items-xs-middle">
@@ -114,7 +119,7 @@ function Footer(){
   )
 }
 
-function Lateral_menu(){
+export function Lateral_menu(){
   return(
     <div className="lateral-menu vertical-align-parent">
       <div className="flex-items-xs-center slider-3 flex-items-xs-middle vertical-align-child">
